@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { FaSearchLocation } from "react-icons/fa";
 import styled from "styled-components";
 
 import axios from "axios";
@@ -27,7 +28,13 @@ const BuscaCep = () => {
   return (
     <>
       <CepDiv>
-        <h1>Buscar CEP:</h1>
+        <h1>
+          BuscaCep.com
+          <span>
+            <FaSearchLocation />
+          </span>
+        </h1>
+
         <div className="input_container">
           <input
             type="number"
@@ -59,12 +66,22 @@ const CepDiv = styled.div`
   justify-content: center;
   width: 50%;
   height: 20%;
-  background: #ccc;
+  background: #7a7a7a99;
   border-radius: 10px;
   flex-direction: column;
 
   h1 {
     margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      margin-left: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .input_container {
