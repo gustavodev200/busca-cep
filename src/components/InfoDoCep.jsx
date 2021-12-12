@@ -52,11 +52,16 @@ const InfoStyles = styled.div`
   justify-content: space-between;
   padding: 1.5rem;
   width: 70%;
-  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+
+  -webkit-box-shadow: -35px 32px 14px rgba(0, 0, 0, 0.45);
+		-moz-box-shadow:    -35px 32px 14px rgba(0, 0, 0, 0.45);
+		box-shadow:         -35px 32px 14px rgba(0, 0, 0, 0.45);	
 
   h2 {
     font-size: 1rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   .first_infos {
@@ -75,6 +80,33 @@ const InfoStyles = styled.div`
   .info_text {
     display: flex;
     align-items: center;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    overflow-y: scroll;
+
+    .first_infos {
+      align-items: center;
+
+      justify-content: center;
+      .info_text {
+        flex-direction: column;
+        h2{
+          margin: 0;
+        }
+      }
+    }
+    .secundary_infos {
+      align-items: center;
+      justify-content: center;
+      .info_text {
+        flex-direction: column;
+        h2{
+          margin: 0;
+        }
+      }
+    }
   }
 `;
 
