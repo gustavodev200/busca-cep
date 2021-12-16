@@ -43,7 +43,7 @@ const BuscaCep = () => {
       <ToastContainer />
       <CepDiv>
         <h1>
-          BuscaCep.com
+          DedeCep.com
           <span>
             <FaSearchLocation />
           </span>
@@ -80,7 +80,7 @@ const CepDiv = styled.div`
   justify-content: center;
   width: 50%;
   height: 20%;
-  background: #072d6b;
+  background: #000000d8;
   border-radius: 10px;
   flex-direction: column;
 

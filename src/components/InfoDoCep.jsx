@@ -53,7 +53,7 @@ const InfoStyles = styled.div`
   padding: 1.5rem;
   width: 70%;
   border-radius: 10px;
-  background: #fff;
+  background: #d1d1d1ab;
 
   -webkit-box-shadow: -35px 32px 14px rgba(0, 0, 0, 0.45);
 		-moz-box-shadow:    -35px 32px 14px rgba(0, 0, 0, 0.45);

@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     background-image: url(${bg});
     background-size: cover;
-
   }
 `;
 
